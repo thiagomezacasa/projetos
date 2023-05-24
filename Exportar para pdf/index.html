@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">   
+    
+    <title>Documento para gerar PDF com conteúdo html</title>
+
+    
+</head>
+
+<body>
+    <h1>teste exportar pdf conteúdo html</h1>
+
+    <button onclick="gerarPdf()"> Gerar pdf</button> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" 
+            integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+    <script> 
+        function gerarPdf(){
+            var doc = new jsPDF();
+
+            doc.fromHTML('<h1> Gere pdf com conteudo html </h1>');
+
+            doc.save('thiago.pdf')
+        }
+    </script>
+</body>
+</html>
