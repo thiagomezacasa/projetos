@@ -5,7 +5,6 @@ const tmpini = Date.now();
 const iniciar = document.getElementById("start");
 const pausar = document.getElementById("pause");
 
-//console.log(tmpini)
 
 
 const contador = ()=> {
