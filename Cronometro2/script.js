@@ -1,7 +1,5 @@
 const timer = document.querySelector("#timer");
 
-
-
 const iniciar = document.getElementById("start");
 const pausar = document.getElementById("pause");
 var cronometro;
