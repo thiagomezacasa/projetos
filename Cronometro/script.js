@@ -49,6 +49,8 @@ const converter = (seg)=>{
     return hora +":"+min+":"+segundo;
     //const formatado = (hora<10?"0"+hora:hora)+":"+(min<10?"0"+min:min)+":"+(segundo<10?"0"+segundo:segundo)
     //    return formatado;
+    //fsfsdf
+    //dfsfsdfsfsfsdf
 }
 
 
