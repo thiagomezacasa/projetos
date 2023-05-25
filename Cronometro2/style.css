@@ -9,12 +9,14 @@ https://www.cssportal.com/css-loader-generator/
     box-sizing: border-box;
 }
 
-body{
+.container{
     height: 100vh;
-  
+    gap: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    background-color: #d1caca;
 }
 
 
@@ -24,16 +26,31 @@ button{
     border: saddlebrown;
     color: white;
     cursor: pointer;
+    transition: all 0.2 ease-in-out;
+    
+}
+
+.start-btn:hover{
+    transform: scale(1.1);
 }
 
 .start-btn{
     background-color: green;
 }
 
+
+.pause-btn:hover{
+    transform: scale(1.1);
+}
+
 .pause-btn{
     background-color: grey;
 }
 
+
+.stop-btn:hover{
+    transform: scale(1.1);
+}
 .stop-btn{
     background-color: red;
 }
@@ -44,10 +61,10 @@ button{
     color: #0f0;
     display: flex;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 50px;
+    font-size: 55px;
     padding: 10px 20px;
     justify-content: center;
-    width: 250px;
+    width: 290px;
     border-radius: 10px;
     border: 5px solid #888;
 }
