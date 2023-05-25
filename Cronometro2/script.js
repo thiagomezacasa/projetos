@@ -3,6 +3,7 @@ const timer = document.querySelector("#timer");
 const iniciar = document.getElementById("start");
 const pausar = document.getElementById("pause");
 var cronometro;
+var formatado;
 
 iniciar.addEventListener("click", () => {
     const tmpini = Date.now();
@@ -13,7 +14,7 @@ iniciar.addEventListener("click", () => {
         let cont = tmpatual - tmpini;
     
         let seg = (tmpatual-tmpini)/1000;
-       // console.log(seg)
+        console.log(seg)
         timer.innerHTML = converter(seg);
     
     }
@@ -26,21 +27,27 @@ iniciar.addEventListener("click", () => {
     
         const segundo = Math.floor(resto%60); 
     
-        const formatado = (hora<10?"0"+hora:hora)+":"+(min<10?"0"+min:min)+":"+(segundo<10?"0"+segundo:segundo)
+        formatado = (hora<10?"0"+hora:hora)+":"+(min<10?"0"+min:min)+":"+(segundo<10?"0"+segundo:segundo)
         return formatado;
     }
 
     cronometro = setInterval(contador,1000);
-    
+    pausar.innerText = "Pausar";
 })
 
 function stopPause(e) {
     clearInterval(cronometro);
-    e.stopPropagation();
+    //e.stopPropagation();
 }
 
 pausar.addEventListener("click", () => {
     stopPause();
+    
+    if (pausar.textContent = 'Pausar'){
+        pausar.innerText = 'Prosseguir'
+
+    }
+    console.log(formatado)
     
     
 })
