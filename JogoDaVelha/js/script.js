@@ -18,34 +18,34 @@ let el;
 //add evento de click nos boxes
 
 for(let i=0; i<boxes.length; i++){
-
-    //alguem clicar na caixa
-    boxes[i].addEventListener("click", function() {
-        
-        el = checkEl(player1, player2);        
-
-        if(this.childNodes.length == 0){
+    console.log("clicc");
+        //alguem clicar na caixa
+        boxes[i].addEventListener("click", function() {
             
-            let cloneEl = el.cloneNode(true);
-            this.appendChild(cloneEl);
-
-            //computador jogada
-            if(player1 == player2){
-                player1++;
-            }else{
-                player2++;
-            }
-        }        
-    });
-}
-
-function checkEl(player1,player2){
-
-    if (player1 == player2){
-        el = x;
-    }else{
-        el = o;
+            el = checkEl(player1, player2);        
+    
+            if(this.childNodes.length == 0){
+                
+                let cloneEl = el.cloneNode(true);
+                this.appendChild(cloneEl);
+    
+                //computador jogada
+                if(player1 == player2){
+                    player1++;
+                }else{
+                    player2++;
+                }
+            }        
+        });
     }
-
-    return el;
-}
+    
+    function checkEl(player1,player2){
+    
+        if (player1 == player2){
+            el = x;
+        }else{
+            el = o;
+        }
+    
+        return el;
+    }
