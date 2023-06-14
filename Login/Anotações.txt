@@ -1,0 +1,6 @@
+https://dev.to/azure/desenvolvendo-uma-aplicacao-crud-node-js-com-postgresql-3clk
+
+express
+pg
+dotenv
+nodemon
