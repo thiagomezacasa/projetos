@@ -4,8 +4,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1&display=swap" rel="stylesheet">
-   
-    <link rel="stylesheet" href="style.css">    
+    
+    
+    <link rel="stylesheet" href="style.css">  
+    
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +18,7 @@
     <main id="app"> 
         <form>
             <div class="step-progress">
-                <strong class="active"> Contato</strong>
+                <strong class="active done"> Contato</strong>
                  <svg width="8" 
                       height="14" 
                       viewbox="0 0 8 14" 
@@ -27,7 +30,7 @@
                         stroke-width="2" 
                         stroke-linecap="square" />                
                 </svg>
-                <strong>Empresa</strong>
+                <strong class="active">Empresa</strong>
                     <svg width="8" 
                         height="14" 
                         viewbox="0 0 8 14" 
@@ -53,7 +56,43 @@
                     </svg>
             </div>
 
-            <div class="form-step active"></div>
+            <div class="form-step active">
+                <div class="content">
+                    <div class="input-wrapper">
+                        <label for="name"></label>
+                        <input 
+                            type="text" 
+                            name="name" 
+                            id="name" 
+                            placeholder="Como prefere ser chamado?"
+                            required />
+                    </div>  
+                    
+                    <div class="input-wrapper">
+                        <label for="email">E-mail</label>
+                        <input 
+                            type="email" 
+                            name="email" 
+                            id="email" 
+                            placeholder="Digite seu email?"
+                            required />
+                    </div> 
+
+                    <div class="input-wrapper">
+                        <label for="phone">Telefone</label>
+                        <input 
+                            type="text" 
+                            name="phone" 
+                            id="phone" 
+                            placeholder="Digite seu Whatsapp?"
+                            onkeypress="return /\d/.test(event.key)" />
+                    </div>
+                </div>
+
+                <div class="button-wrapper justify-end">
+                    <button class="btn primary"> CONTINUAR</button>
+                </div>
+            </div>
             
         </form>
     </main>
