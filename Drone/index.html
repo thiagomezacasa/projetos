@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Site de Drones</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Site de Drones</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Bem-vindo ao Site de Drones!</h2>
+    <p>Apresentando imagens incríveis de drones e cursos de pilotagem.</p>
+  </section>
+
+  <section id="galeria">
+    <h2>Galeria de Drones</h2>
+    <div class="grid">
+      <div class="item">
+        <img loading="lazy" src="https://source.unsplash.com/random?a=1" alt="Name1">
+        <h3>Drone 1</h3>
+      </div>
+      <div class="item">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1506947411487-a56738267384?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Name2">
+        <h3>Drone 2</h3>
+      </div>
+      <div class="item">
+        <img loading="lazy" src="https://source.unsplash.com/random?b=1" alt="Name3">
+        <h3>Drone 3</h3>
+      </div>
+      <!-- Adicione mais imagens de drones aqui -->
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Entre em Contato</h2>
+    <p>Para mais informações sobre nossos cursos de pilotagem de drones, entre em contato conosco através do formulário abaixo:</p>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" required></textarea>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Site de Drones. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
