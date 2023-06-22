@@ -28,14 +28,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(background.jpg);
+    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
   
   header {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(184, 140, 140, 0.8);
     color: #fff;
     padding: 20px;
   }
@@ -44,14 +44,13 @@ body {
   img {
     width: 10%;
     height: 10%;
-
+    
   
     
 }
 
-.galeria{
-    display: flex;
-    flex-wrap: wrap;
+.grid{
+    display: flex;    
     justify-content: center;
-
+    align-items: center;
 }
